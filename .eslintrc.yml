@@ -9,7 +9,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console": "off",
-        "js": "always"
+        "no-console": 0,
+        "import/extensions": 0,
+        "js": 0
     }
 }
