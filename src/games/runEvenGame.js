@@ -1,5 +1,11 @@
+import getRandomInRange from '../getRandomInRange.js';
+// import runEngineGame from '../index.js';
+
+const isNumberEven = (number) => number % 2 === 0;
 const runEvenGame = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const number = getRandomInRange();
+  console.log(`Question: ${number}`);
+  return isNumberEven(number) ? 'yes' : 'no';
 };
 
 export default runEvenGame;
