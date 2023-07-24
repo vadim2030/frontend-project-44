@@ -12,4 +12,6 @@ node: v18.12.0
 
 make setup
 
+*brain-even*
+
 [![asciicast](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ.svg)](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ)
