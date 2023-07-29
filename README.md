@@ -15,3 +15,7 @@ make setup
 *brain-even*
 
 [![asciicast](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ.svg)](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ)
+
+*brain-calc*
+
+[![asciicast](https://asciinema.org/a/PdaWpZCYxlhmywpy23aHaSkvy.svg)](https://asciinema.org/a/PdaWpZCYxlhmywpy23aHaSkvy)
