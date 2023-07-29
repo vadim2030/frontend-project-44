@@ -1,5 +1,4 @@
 import getRandomInRange from '../getRandomInRange.js';
-// import runEngineGame from '../index.js';
 
 const isNumberEven = (number) => number % 2 === 0;
 const runEvenGame = () => {
