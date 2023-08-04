@@ -14,7 +14,7 @@ const calculator = (num1, num2, operand) => {
 };
 
 const getSignRandom = () => {
-  const sin = ['+', '-', '*'];
+  const sin = ['+', '*', '-'];
   return sin[Math.floor(Math.random() * sin.length)];
 };
 

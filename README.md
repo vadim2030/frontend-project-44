@@ -18,3 +18,11 @@ make setup
 *brain-calc*
 
 [![asciicast](https://asciinema.org/a/PdaWpZCYxlhmywpy23aHaSkvy.svg)](https://asciinema.org/a/PdaWpZCYxlhmywpy23aHaSkvy)
+
+*brain-gcd*
+
+[![asciicast](https://asciinema.org/a/xcqOvvoA9QxKf7eOzbqzRTFFE.svg)](https://asciinema.org/a/xcqOvvoA9QxKf7eOzbqzRTFFE)
+
+*brain-progression*
+
+[![asciicast](https://asciinema.org/a/pCf5iiS9WLRVE6llT0yuvIo3X.svg)](https://asciinema.org/a/pCf5iiS9WLRVE6llT0yuvIo3X)
