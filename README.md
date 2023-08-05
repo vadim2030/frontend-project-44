@@ -29,6 +29,8 @@
 
 `brain-progression` - Определить пропущенное число в прогрессии. 
 
+# Демонстрация игр:
+
 *brain-even*
 
 [![asciicast](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ.svg)](https://asciinema.org/a/8yohtp0BrjQlF2SEQgX87LMvQ)
@@ -47,4 +49,4 @@
 
 *brain-prime*
 
-[![asciicast](https://asciinema.org/a/o0Y7whqcKjfvke8bNv4FqmVPG.svg]( https://asciinema.org/a/o0Y7whqcKjfvke8bNv4FqmVPG)
+[![asciicast](https://asciinema.org/a/o0Y7whqcKjfvke8bNv4FqmVPG.svg)]( https://asciinema.org/a/o0Y7whqcKjfvke8bNv4FqmVPG)
