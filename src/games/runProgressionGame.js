@@ -12,7 +12,7 @@ const runProgressionGame = () => {
   }
   const answer = progression[index];
   progression[index] = '..';
-  console.log(progression.join(' '));
+  console.log(`Question: ${progression.join(' ')}`);
   return String(answer);
 };
 
