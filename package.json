@@ -10,7 +10,7 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/vadim2030/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/vadim2030/frontend-project-44/actions)",
+  "description": "Mind games are the first project written in the Hexlet online school. It is a set of five console games built on the principle of applications for pumping the brain. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered passed. The wrong answers complete the game and offer it to go again.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

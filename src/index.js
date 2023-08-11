@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-const runEngineGame = (fn, rule) => {
+const runEngineGame = (fn) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(rule);
   const cycle = 3;
   for (let i = 0; i < cycle; i += 1) {
-    const correctAnswer = fn();
+    const [question, correctAnswer] = fn();
+    console.log(question);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer === yourAnswer) {
       console.log('Correct!');

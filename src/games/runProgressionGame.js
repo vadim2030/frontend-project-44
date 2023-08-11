@@ -1,19 +1,32 @@
 import getRandomInRange from '../getRandomInRange.js';
+import runEngineGame from '../index.js';
 
-const runProgressionGame = () => {
+const minStepProg = 1;
+const minProgLength = 5;
+const maxNum = 10;
+
+const progressGeneration = () => {
   const startNum = getRandomInRange();
-  const stepProg = getRandomInRange(1, 10);
-  const progLength = getRandomInRange(5, 10);
-  const index = getRandomInRange(1, progLength);
+  const stepProg = getRandomInRange(minStepProg, maxNum);
+  const progLength = getRandomInRange(minProgLength, maxNum);
+  const positionUnknown = getRandomInRange(1, progLength);
   const progression = [startNum];
   for (let i = 0; i <= progLength - 1; i += 1) {
     const lastNum = progression[progression.length - 1];
     progression.push(lastNum + stepProg);
   }
-  const answer = progression[index];
-  progression[index] = '..';
-  console.log(`Question: ${progression.join(' ')}`);
-  return String(answer);
+  const answers = progression[positionUnknown];
+  progression[positionUnknown] = '..';
+  return [progression.join(' '), String(answers)];
 };
+
+const progressionGame = () => {
+  const [progression, answers] = progressGeneration();
+  const question = `Question: ${progression}`;
+  const answer = answers;
+  return [question, answer];
+};
+
+const runProgressionGame = () => runEngineGame(progressionGame, 'What number is missing in the progression?');
 
 export default runProgressionGame;

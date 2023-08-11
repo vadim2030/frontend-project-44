@@ -1,6 +1,12 @@
+/* eslint-disable consistent-return */
+import runEngineGame from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
-const calculator = (num1, num2, operand) => {
+const sin = ['+', '*', '-'];
+
+const getSignRandom = () => sin[Math.floor(Math.random() * sin.length)];
+
+const runCalculator = (num1, num2, operand) => {
   switch (operand) {
     case '-':
       return num1 - num2;
@@ -9,23 +15,21 @@ const calculator = (num1, num2, operand) => {
     case '*':
       return num1 * num2;
     default:
-      return '';
+      throw new Error(`Unknown order state: '${operand}'!`);
   }
-};
-
-const getSignRandom = () => {
-  const sin = ['+', '*', '-'];
-  return sin[Math.floor(Math.random() * sin.length)];
 };
 
 const getNumbers = () => [getRandomInRange(), getRandomInRange()].sort((a, b) => b - a);
 
-const runCalcGame = () => {
+const calcGame = () => {
   const [firstNum, secondNum] = getNumbers();
   const signRandom = getSignRandom();
-  const question = `${firstNum} ${signRandom} ${secondNum}`;
-  console.log(`Question: ${question}`);
-  return String(calculator(firstNum, secondNum, signRandom));
+  const questionStart = `${firstNum} ${signRandom} ${secondNum}`;
+  const question = `Question: ${questionStart}`;
+  const answer = String(runCalculator(firstNum, secondNum, signRandom));
+  return [question, answer];
 };
+
+const runCalcGame = () => runEngineGame(calcGame, 'What is the result of the expression?');
 
 export default runCalcGame;
