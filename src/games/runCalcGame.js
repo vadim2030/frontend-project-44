@@ -2,9 +2,11 @@
 import runEngineGame from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
-const sin = ['+', '*', '-'];
+const minNum = 0;
 
-const getSignRandom = () => sin[Math.floor(Math.random() * sin.length)];
+const signs = ['+', '*', '-'];
+
+const getSignRandom = () => signs[getRandomInRange(minNum, signs.length)];
 
 const runCalculator = (num1, num2, operand) => {
   switch (operand) {
