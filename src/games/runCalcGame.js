@@ -6,7 +6,7 @@ const minNum = 0;
 
 const signs = ['+', '*', '-'];
 
-const getSignRandom = () => signs[getRandomInRange(minNum, signs.length)];
+const getSignRandom = () => signs[getRandomInRange(minNum, signs.length - 1)];
 
 const runCalculator = (num1, num2, operand) => {
   switch (operand) {
