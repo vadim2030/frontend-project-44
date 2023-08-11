@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
 
-const runEngineGame = (fn) => {
+const runEngineGame = (fn, rule) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  console.log(rule);
   const cycle = 3;
   for (let i = 0; i < cycle; i += 1) {
     const [question, correctAnswer] = fn();
