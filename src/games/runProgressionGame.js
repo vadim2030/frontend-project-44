@@ -21,9 +21,8 @@ const progressGeneration = () => {
 };
 
 const progressionGame = () => {
-  const [progression, answers] = progressGeneration();
+  const [progression, answer] = progressGeneration();
   const question = `Question: ${progression}`;
-  const answer = answers;
   return [question, answer];
 };
 
