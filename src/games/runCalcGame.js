@@ -1,12 +1,12 @@
 /* eslint-disable consistent-return */
 import runEngineGame from '../index.js';
-import getRandomInRange from '../getRandomInRange.js';
+import getRandomInRange from '../utils.js';
 
-const minNum = 0;
+const rule = 'What is the result of the expression?';
 
 const signs = ['+', '*', '-'];
 
-const getSignRandom = () => signs[getRandomInRange(minNum, signs.length - 1)];
+const getSignRandom = () => signs[getRandomInRange(0, signs.length - 1)];
 
 const runCalculator = (num1, num2, operand) => {
   switch (operand) {
@@ -23,7 +23,7 @@ const runCalculator = (num1, num2, operand) => {
 
 const getNumbers = () => [getRandomInRange(), getRandomInRange()].sort((a, b) => b - a);
 
-const calcGame = () => {
+const getRoundData = () => {
   const [firstNum, secondNum] = getNumbers();
   const signRandom = getSignRandom();
   const questionStart = `${firstNum} ${signRandom} ${secondNum}`;
@@ -32,6 +32,6 @@ const calcGame = () => {
   return [question, answer];
 };
 
-const runCalcGame = () => runEngineGame(calcGame, 'What is the result of the expression?');
+const runCalcGame = () => runEngineGame(getRoundData, rule);
 
 export default runCalcGame;
