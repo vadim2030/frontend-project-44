@@ -28,6 +28,4 @@ const getRoundData = () => {
   return [question, answer];
 };
 
-const runCalcGame = () => runEngineGame(getRoundData, rule);
-
-export default runCalcGame;
+export default () => runEngineGame(getRoundData, rule);

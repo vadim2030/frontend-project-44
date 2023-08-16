@@ -6,7 +6,7 @@ const minProgLength = 5;
 const maxNum = 10;
 const rule = 'What number is missing in the progression?';
 
-const progressGeneration = (startNum, stepProg, progLength) => {
+const getProgressionAndAnswer = (startNum, stepProg, progLength) => {
   const positionUnknown = getRandomInRange(1, progLength);
   const progression = [startNum];
   for (let i = 0; i <= progLength - 1; i += 1) {
@@ -22,11 +22,9 @@ const getRoundData = () => {
   const startNum = getRandomInRange();
   const stepProg = getRandomInRange(minStepProg, maxNum);
   const progLength = getRandomInRange(minProgLength, maxNum);
-  const [progression, answer] = progressGeneration(startNum, stepProg, progLength);
+  const [progression, answer] = getProgressionAndAnswer(startNum, stepProg, progLength);
   const question = `Question: ${progression}`;
   return [question, answer];
 };
 
-const runProgressionGame = () => runEngineGame(getRoundData, rule);
-
-export default runProgressionGame;
+export default () => runEngineGame(getRoundData, rule);

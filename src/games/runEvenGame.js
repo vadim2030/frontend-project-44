@@ -11,6 +11,4 @@ const getRoundData = () => {
   return [question, answer];
 };
 
-const runEvenGame = () => runEngineGame(getRoundData, rule);
-
-export default runEvenGame;
+export default () => runEngineGame(getRoundData, rule);

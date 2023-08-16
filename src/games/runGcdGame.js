@@ -18,6 +18,4 @@ const getRoundData = () => {
   return [question, answer];
 };
 
-const runGcdGame = () => runEngineGame(getRoundData, rule);
-
-export default runGcdGame;
+export default () => runEngineGame(getRoundData, rule);
