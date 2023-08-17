@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import runEngineGame from '../index.js';
 import getRandomInRange from '../utils.js';
 
@@ -23,7 +22,7 @@ const getRoundData = () => {
   const [firstNum, secondNum] = [getRandomInRange(), getRandomInRange()].sort((a, b) => b - a);
   const signRandom = signs[getRandomInRange(0, signs.length - 1)];
   const questionStart = `${firstNum} ${signRandom} ${secondNum}`;
-  const question = `Question: ${questionStart}`;
+  const question = questionStart;
   const answer = String(runCalculator(firstNum, secondNum, signRandom));
   return [question, answer];
 };

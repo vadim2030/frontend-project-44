@@ -13,7 +13,7 @@ const isPrime = (num) => {
 
 const getRoundData = () => {
   const firstNum = getRandomInRange();
-  const question = `Question: ${firstNum}`;
+  const question = firstNum;
   const answer = isPrime(firstNum) ? 'yes' : 'no';
   return [question, answer];
 };
