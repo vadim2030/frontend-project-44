@@ -13,7 +13,7 @@ const getGcd = (x, y) => {
 const getRoundData = () => {
   const firstNum = getRandomInRange(minNum, maxNum);
   const secondNum = getRandomInRange(minNum, maxNum);
-  const question = ` ${firstNum} ${secondNum}`;
+  const question = `${firstNum} ${secondNum}`;
   const answer = String(getGcd(firstNum, secondNum));
   return [question, answer];
 };
